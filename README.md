@@ -39,18 +39,18 @@ Section 3: Configuring your Amazon RDS database, Now its time to modify our Amaz
    connections</br>
 4. When you’re finished, choose the Save rules button to save your changes</br>
 5. Now its time to SSH into our EC2 instance, to learn more about SSH into your instance follow this guide [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html]</br>
-6. Now all thats left is to create a databse user, commands to follow are as follows:
-   -> First, run the following command in your terminal to install a MySQL client to interact with the database.
-     sudo yum install -y mysql
-   -> In the AWS Console, head over to Amazon RDS page and find the hostname, it will available as Endpoint in the Connectivity & security section.
-     export MYSQL_HOST=<your-endpoint>
-   -> Run the following command to connect to your DB
-      mysql --user=<user> --password=<password> wordpress
-   -> create a database user for your WordPress application and give the user permission to access the wordpress database.
-      CREATE USER 'wordpress' IDENTIFIED BY 'wordpress-pass';
-      GRANT ALL PRIVILEGES ON wordpress.* TO wordpress;
-      FLUSH PRIVILEGES;
-      Exit
+6. Now all thats left is to create a databse user, commands to follow are as follows:</br>
+   -> First, run the following command in your terminal to install a MySQL client to interact with the database</br>
+     sudo yum install -y mysql</br>
+   -> In the AWS Console, head over to Amazon RDS page and find the hostname, it will available as Endpoint in the Connectivity & security section</br>
+      export MYSQL_HOST=<your-endpoint></br>
+   -> Run the following command to connect to your DB</br>
+      mysql --user=<user> --password=<password> wordpress</br>
+   -> create a database user for your WordPress application and give the user permission to access the wordpress database</br>
+      CREATE USER 'wordpress' IDENTIFIED BY 'wordpress-pass';</br>
+      GRANT ALL PRIVILEGES ON wordpress.* TO wordpress;</br>
+      FLUSH PRIVILEGES;</br>
+      Exit</br>
 
 
 Step 4: Configuring Wordpress on EC2
