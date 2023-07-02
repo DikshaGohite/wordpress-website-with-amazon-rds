@@ -1,6 +1,4 @@
-Project Description: Deploying WordPress site to run a blog with Amazon RDS
-
-![my-wordpress-screenshot](my-wordpress-screenshot.PNG)
+Project Description: Deploying WordPress site on an EC2 instance to run a blog with Amazon RDS as backend databse 
 
 Problem Statement. Here we are making a wordpress blog post, which requires database to store its contents, while wordpress uses MYSQL as its databases, the administration tasks come along with it. With Amazon RDS these concerns go away and you can focus on your blog 
 
@@ -78,6 +76,7 @@ Step 4: Configuring Wordpress on EC2
    -> sudo cp -r wordpress/* /var/www/html/</br>
    -> sudo service httpd restart</br>
 
+![After deployment:](my-wordpress-screenshot.PNG)</br>
 That’s it. You have a live, publicly accessible WordPress installation using a fully managed MySQL database on Amazon RDS</br>
 
 Important:
