@@ -1,6 +1,6 @@
 Project Description: Deploying WordPress site to run a blog with Amazon RDS
 
-![my-wordpress-screenshot](my-wordpress-screenshot.png)
+![my-wordpress-screenshot](my-wordpress-screenshot.PNG)
 
 Problem Statement. Here we are making a wordpress blog post, which requires database to store its contents, while wordpress uses MYSQL as its databases, the administration tasks come along with it. With Amazon RDS these concerns go away and you can focus on your blog 
 
